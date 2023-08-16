@@ -6,3 +6,4 @@ Realtime Holistic Mocap with Ground Contact
 https://www.bilibili.com/video/BV1Fh4y137Cj/?share_source=copy_web&vd_source=017202815bd15200fb24a42457917287
 
 # Paper
+https://arxiv.org/abs/2307.01200
