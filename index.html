@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proxy-Cap Project Page</title>
+<!-- Bootstrap -->
+<link href="./css/bootstrap-4.0.0.css" rel="stylesheet">
+</head>
+<body>
+<div id="page_container">
+<header>
+  <div class="jumbotron" >
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- <h5 class="text-center">IEEE ICCV 2021</h5> -->
+          <h2 class="text-center">Real-time Monocular Full-body Capture in World Space via Sequential<br/>Proxy-to-Motion Learning</h1>
+          <p class="text-center">&nbsp;</p>
+          <h6 class="text-center">Yuxiang Zhang<sup>1</sup>, Hongwen Zhang<sup>2*</sup>, Liangxiao Hu<sup>3</sup>, Jiajun Zhang<sup>4</sup>, 
+            Hongwei Yi<sup>5</sup>, Shengping Zhang<sup>3</sup>, Yebin Liu<sup>1*</sup></a> (* - corresponding author)</h6>
+          <p class="text-center"><sup>1</sup>Tsinghua University<br/>
+            <sup>2</sup>Beijing Normal University<br/>
+            <sup>3</sup>Harbin Institute of Technology<br/>
+            <sup>4</sup>Beijing University of Posts and Telecommunications<br/>
+            <sup>5</sup>Max Planck Institute for Intelligent Systems, T̈ubingen, Germany</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<section>
+  
+  <div class="container">
+    <h2>&nbsp;</h2>
+    <div class="row">
+      <div class="col-lg-14 col-md-14 col-sm-14 text-center offset-xl-0 col-xl-12"> <img src="assets/teaser_final.jpg" width="1000" alt=""/>
+        <p>&nbsp;</p>  
+        <p class="text-left">Fig 1.&nbsp;The proposed method, ProxyCap, is a real-time monocular full-body capture solution to produce accurate human motions with
+          plausible foot-ground contact in world space.</p>
+      <p>&nbsp;</p>  
+    </div>
+  </div>
+
+  <div class="container">
+    <p>&nbsp;</p>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
+        <h2>Abstract</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 text-center  offset-xl-0 col-xl-12">
+        <p class="text-left"><em>
+          Learning-based approaches to monocular motion cap-
+ture have recently shown promising results by learning to
+regress in a data-driven manner. However, due to the chal-
+lenges in data collection and network designs, it remains
+challenging for existing solutions to achieve real-time full-
+body capture while being accurate in world space. In this
+work, we introduce ProxyCap, a human-centric proxy-to-
+motion learning scheme to learn world-space motions from
+a proxy dataset of 2D skeleton sequences and 3D rotational
+motions. Such proxy data enables us to build a learning-
+based network with accurate world-space supervision while
+also mitigating the generalization issues. For more accu-
+rate and physically plausible predictions in world space,
+our network is designed to learn human motions from a
+human-centric perspective, which enables the understand-
+ing of the same motion captured with different camera tra-
+jectories. Moreover, a contact-aware neural motion descent
+module is proposed in our network so that it can be aware
+of foot-ground contact and motion misalignment with the
+proxy observations. With the proposed learning-based solu-
+tion, we demonstrate the first real-time monocular full-body
+capture system with plausible foot-ground contact in world
+space even using hand-held moving cameras.</em></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
+        <h2>Overview </h2>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 text-center offset-xl-1 col-xl-10"> <img src="assets/pipeline.jpg" width="900" alt=""/>
+        <p>&nbsp;</p>
+        <p class="text-left">Fig 2.&nbsp;Illustration of the proposed method ProxyCap. Our method takes the estimated 2D skeletons from a sliding window as inputs
+          and estimates the relative 3D motions in the human coordinate space. These local movements are accumulated frame by frame to recover
+          the global 3D motions. For more accurate and physically plausible results, a contact-aware neural motion descent module is proposed to
+          refine the initial motion predictions.</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
+        <h2>Results </h2>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 text-center col-xl-12"> <img src="assets/results.jpg" width="900" alt=""/>
+        <p>&nbsp;</p>
+        <p class="text-left">Fig 3.&nbsp;Results across different cases in the (a,g) 3DPW [61], (b) EHF [40], and (c) Human3.6M [13] datasets and (d,e,f) internet videos.
+          We demonstrate that our method can recover the accurate and plausible human motions in moving cameras at a real-time performance.
+          Specifically, (g) demonstrates the robustness and the temporal coherence of our method even under the occlusion inputs.</p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 text-center col-xl-12"> <img src="assets/compare_cvpr.jpg" width="700" alt=""/>
+        <p>&nbsp;</p>
+        <p class="text-left">Fig 4.&nbsp;Qualitative comparison with previous state-of-the-art
+          methods: (a) PyMAF-X [72], (c) GLAMR [67], (b)(d) Ours.</p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
+        <h2>Technical Paper</h2>
+      </div>
+    </div>
+    <p>&nbsp;</p>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center"> <a href="assets/paper.pdf"><img src="assets/paper.png" width="1000" alt=""/></a>
+      <p>&nbsp;</p>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-lg-12 mb-4 mt-2 text-center">
+        <h2>Demo Video</h2>
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
+      <video controls="controls" width="1024" height="576">
+        <source src="./assets/video.mp4" type="video/mp4">
+      </video>
+      <p>&nbsp;</p>
+    </div>
+	<hr>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
+        <h2>Citation</h2>
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-left">
+      <p><span style="color:#000000;font-family:'Courier New';font-size:15px;"> Yuxiang Zhang and Hongwen Zhang and Liangxiao Hu and Jiajun Zhang and Hongwei Yi and Shengping Zhang and Yebin Liu.
+         "ProxyCap: Real-time Monocular Full-body Capture in World Space via Human-Centric Proxy-to-Motion Learning". arXiv 2307.01200</span></p>
+      <p>&nbsp;</p>
+      <p><span style="color:#000000;font-family:'Courier New';font-size:15px;"> @misc{zhang2023proxycap, <br>
+      title={ProxyCap: Real-time Monocular Full-body Capture in World Space via Human-Centric Proxy-to-Motion Learning}, <br>
+			author={Yuxiang Zhang and Hongwen Zhang and Liangxiao Hu and Jiajun Zhang and Hongwei Yi and Shengping Zhang and Yebin Liu},<br>
+			year={2023},<br>
+      eprint={2307.01200},<br>
+      archivePrefix={arXiv},<br>
+      primaryClass={cs.CV}<br>
+		}</span></p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </div>
+    <div class="row"> </div>
+  </div>
+  <div class="jumbotron"> </div>
+</section>	
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="./js/jquery-3.2.1.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="./js/popper.min.js"></script> 
+<script src="./js/bootstrap-4.0.0.js"></script>
+</body>
+</html>
