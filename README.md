@@ -1,4 +1,6 @@
 # ProxyCapV2
+Project Page: https://zhangyux15.github.io/ProxyCapV2/
+
 Realtime Holistic Mocap with Ground Contact
 ![teaser](https://github.com/zhangyux15/RealPhyCap/blob/main/teaser3.png?raw=true)
 
